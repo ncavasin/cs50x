@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted symbol
+{% endblock%}
+
+{% block main %}
+    <div class="container">
+        A share of <span class="red">{{ results["name"] }}</span>
+        <span class="green">({{ results["symbol"] }})</span> costs $
+        <span class="yellow">{{ results["price"] }}</span>
+    </div>
+{% endblock %}

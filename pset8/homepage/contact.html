@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="scripts.js"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel=icon type="image/png" href="img/flag.png">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+        <title>Nicolas Cavasin</title>
+    </head>
+    <body>
+        <header>
+            <ul class="row">
+                <li class="col"><a href="index.html">Home</a></li>
+                <li class="col"><a href="#">Contact me</a></li>
+                <li class="col"><a href="roberto.html">Meet Roberto</a></li>
+                <li class="col"><a href="speech.html">Sir Churchill</a></li>
+            </ul>
+        </header>
+        <div class="container contact-container">
+            <!--Main column inside a container-->
+            <div class="col">
+                <p class="contact-p">
+                    If you would like to get in touch with me, do not hesitate in using this form
+                    to let me know. I'll answer as soon as i can.
+                </p>
+                <form id="contact-form" onsubmit="submitted(); return false;">
+                    <!--A row inside the main column-->
+                    <div class="row">
+                        <input id="form-name" class="col form-data" type="text" placeholder="Your name">
+                        <input id = "form-email" class="col form-data" type="email" placeholder="Your email">
+                    </div>
+                    <!--A row inside the main column-->
+                    <div class="row">
+                        <input id="form-subject" class="col form-data" type="text" placeholder="Subject">
+                    </div>
+                    <!--A row inside the main column-->
+                    <div class="row">
+                        <textarea id="form-message" class="col form-data" rows="2" placeholder="Your message"></textarea>
+                    </div>
+                    <!--A row inside the main column-->
+                    <div class="row">
+                        <!--Use the button to trigger the form submittance-->
+                        <input type="submit" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="page-footer fixed-bottom">
+            This site was created by <a href="https://github.com/ncavasin" target="_blank">ncavasin</a> for the
+            <a href="https://cs50.harvard.edu/x/2020/" target="_blank">CS50x</a> 2020 course.
+        </footer>
+    </body>
+</html>
